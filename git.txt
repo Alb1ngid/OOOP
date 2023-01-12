@@ -1,0 +1,20 @@
+git init
+git remote add origin link
+create .gitignore
+        .idea
+        .gitignore
+        __pycache__/
+        venv
+git add . or name to file
+git commit -m 'text'
+git push origin name to branch
+
+git rm --cached name to file
+git rm --cached -r name to dir
+
+git branch
+git branch name to branch
+git checkout name branch
+git checkout -b name to branch
+
+git remote remove origin
