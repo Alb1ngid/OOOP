@@ -18,3 +18,5 @@ git checkout name branch
 git checkout -b name to branch
 
 git remote remove origin
+
+git merge name to branch
