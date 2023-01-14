@@ -1,16 +1,18 @@
-import calculator
-class Bank:
+from calculator import Calculator
+
+
+class Bank(Calculator):
     def __init__(self, name, balance):
         self._name = name
         self._balance = balance
 
-    def moneyX(self, plus_balance=int(input('Введите сумму которую хотите добавить на свой счёт: '))):
+    def moneyX(self, plus_balance):
         self._balance = plus_balance + self._balance
         return f'Вы внесли {plus_balance}, теперь баланс вашего счёта составляет {self._balance}'
 
-    def _kill(self, minus_balace=int((input('Введите сумму которую хотите снять с вашего счёта: ')))):
-        self._balance = self._balance - minus_balace
-        return f'Вы сняли {minus_balace}, теперь баланс вашего счёта составляет {self._balance}'
+    def _kill(self, minus_balance):
+        self._balance = self._balance - minus_balance
+        return f'Вы сняли {minus_balance}, теперь баланс вашего счёта составляет {self._balance}'
 
     def __jackpot(self):
         self._balance = self._balance * 10
@@ -21,11 +23,16 @@ class Bank:
         return f'Вы скопировали баланс у {copy._name} теперь баланс вашего счёта составляет: {self._balance}'
 
 
-test = Bank('Max', 100)
-print(test._name)
-print(test.moneyX())
-print(test._kill())
-print(test._Bank__jackpot())
-test2 = Bank('Vika', 200)
-print(test2._copy_balance(test))
-
+a = int(input('Введите сумму которую хотите добавить на свой счёт: '))
+b = int(input('Введите сумму которую хотите снять с вашего счёта: '))
+test = Bank('Max', 5)
+# print(test._name)
+# print(test.moneyX(a))
+# print(test._kill(b))
+# print(test._Bank__jackpot())
+test2 = Bank('Vika', 10)
+# print(test._copy_balance(test2))
+# print(Calculator.__add__(test, test))
+print(test._balance)
+test * test2
+print(test._balance)
