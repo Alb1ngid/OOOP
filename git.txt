@@ -22,3 +22,5 @@ git checkout -b name to branch
 
 
 git merge name to branch
+
+git reverse 0000branch

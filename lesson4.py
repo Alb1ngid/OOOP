@@ -1,7 +1,8 @@
 # 1 множественное наследование
 # MRO method resolution order
+import colorama
 
-
+import less5
 class Ded:
     def __init__(self,a,b):
         self.a=a
@@ -26,6 +27,6 @@ class Son(Father,Ded):
         print('это метод класса C')
         Ded.r(self)
 
-c=Son('a','a0',2)
-c.r()
-print(Son.mro())
+# c=Son('a','a0',2)
+# c.r()
+# print(Son.mro())
